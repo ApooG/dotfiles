@@ -117,6 +117,9 @@ fi
 #Code completion for git
 source ~/.git-completion.bash
 
+# Make a directory and switch to it with one command
+function mkcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+
 #  Customize BASH PS1 prompt to show current GIT repository and branch.
 #  by Mike Stewart - http://MediaDoneRight.com
 
