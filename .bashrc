@@ -218,10 +218,10 @@ if [ $? -eq 0 ]; then \
   else \
     # @5 - Changes to working tree
     echo "'$IRed'"$(__git_ps1 " {%s}"); \
-  fi) '$BYellow$PathShort$Color_Off'\$ "; \
+  fi) '$BIBlue$PathShort$Color_Off'\$ "; \
 else \
   # @2 - Prompt when not in GIT repo
-  echo " '$Yellow$PathShort$Color_Off'\$ "; \
+  echo " '$IBlue$PathShort$Color_Off'\$ "; \
 fi)'
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
